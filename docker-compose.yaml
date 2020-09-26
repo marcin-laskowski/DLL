@@ -1,0 +1,11 @@
+version: '3'
+services:
+  syndicai-engine-local:
+    image: syndicai/engine:python3.6
+    command:
+      - local
+    ports:
+      - 6000:6000
+      - 8000:8000
+    volumes:
+      - ./model:/mnt/workspace
